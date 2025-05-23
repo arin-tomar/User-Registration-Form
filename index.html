@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="form-container">
+    <h2>User Registration Form</h2>
+    <form id="registrationForm" novalidate>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" required />
+            <span class="error" id="usernameError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+            <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required />
+            <span class="error" id="passwordError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate" required max="" />
+            <span class="error" id="birthdateError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" required></textarea>
+            <span class="error" id="addressError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" maxlength="10" required />
+            <span class="error" id="phoneError"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
